@@ -1,0 +1,63 @@
+<!-- <div class="container-fluid justify-content-center dropdown">
+            <ul class="navbar-nav d-flex justify-content-center flex-row">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Materiales Eléctricos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Automatización y control</a></li>
+                        <li><a class="dropdown-item" href="#">Bandeja Portacable Perforadas</a></li>
+                        <li><a class="dropdown-item" href="#">Bandeja Portacable Escalera</a></li>
+                        <li><a class="dropdown-item" href="#">Cable Canal</a></li>
+                        <li><a class="dropdown-item" href="#">Cables - Baja Tensión</a></li>
+                        <li><a class="dropdown-item" href="#">Caños y Accesorios Metálicos</a></li>
+                        <li><a class="dropdown-item" href="#">Caños y Accesorios PVC</a></li>
+                        <li><a class="dropdown-item" href="#">Caños y Accesorios Tipo Daisa</a></li>
+                        <li><a class="dropdown-item" href="#">Capacitores</a></li>
+                        <li><a class="dropdown-item" href="#">Cintas Aisladoras, Empalmes Y Termocontraibles</a></li>
+                        <li><a class="dropdown-item" href="#">Disyuntores Diferenciales</a></li>
+                        <li><a class="dropdown-item" href="#">Fichas y Bases Industriales</a></li>
+                        <li><a class="dropdown-item" href="#">Fichas y Portalamparas</a></li>
+                        <li><a class="dropdown-item" href="#">G - Cajas P/derivación</a></li>
+                        <li><a class="dropdown-item" href="#">G - Componentes Para Gabinetes y Tableros</a></li>
+                        <li><a class="dropdown-item" href="#">G - Gabinetes P/medición y Toma NH</a></li>
+                        <li><a class="dropdown-item" href="#">G - Tableros, Cajas Térmicas y Racks</a></li>
+                        <li><a class="dropdown-item" href="#">Llaves Conmutadoras, Inversoras, Seccionadoras</a></li>
+                        <li><a class="dropdown-item" href="#">Llaves De Luz y Accesorios</a></li>
+                        <li><a class="dropdown-item" href="#">Luces Emergencia y Señaletica</a></li>
+                        <li><a class="dropdown-item" href="#">Pisoducto y Accesorios</a></li>
+                        <li><a class="dropdown-item" href="#">Seguridad e Industria</a></li>
+                        <li><a class="dropdown-item" href="#">Terminales</a></li>
+                        <li><a class="dropdown-item" href="#">Termomagnéticas</a></li>
+                        <li><a class="dropdown-item" href="#">Transformadores, Fuentes y Drivers</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Iluminación
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Herramientas
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Hogar y Equipamiento
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div> -->

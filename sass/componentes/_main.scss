@@ -1,0 +1,693 @@
+:root {
+    --font-size: 1.3rem;
+    --border-radius: 3px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// ----------------------------------- ELECTROPUNTOS E INFO
+.electropuntos-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: nth($color-primary, 1);
+    border-radius: 0 0 6px 6px;
+    color: #fff;
+    padding: 5px 15px;
+    width: 100%;
+    text-align: left;
+
+    .lado-izquierdo {
+        display: flex;
+        gap: 15px;
+        color: #fff;
+
+        a {
+            font-size: 13px;
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+.lado-derecho {
+    a {
+        display: inline-flex;
+        font-size: 13px;
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+
+// ----------------------------------- FIN ELECTROPUNTOS E INFO
+body {
+    .banner {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            // filter: brightness(0.5);
+        }
+
+        // .image-text {
+        //     background-color: #00000088;
+        //     font-family: 'Montserrat';
+        //     text-align: center;
+        //     width: 100%;
+        //     position: absolute;
+        //     top: 50%;
+        //     left: 50%;
+        //     transform: translate(-50%, -50%);
+        //     z-index: 1;
+        //     color: white;
+        //     font-size: 55px;
+        //     font-weight: 300;
+        //     padding: 15px 0;
+        // }
+    }
+
+    .navbar {
+        padding: 0;
+        background-color: #212121;
+    }
+}
+.navbar-eba{
+    background-color: #212121;
+}
+
+// .form-control.me-2 {
+//     position: relative;
+//     background-color: #212121;
+//     border-color: white;
+//     border-radius: 2px;
+//     font-size: 14px;
+//     padding: 11.2px 28px 11.2px 14px;
+//     margin-right: 0 !important;
+//     letter-spacing: 0.5px;
+//     &::placeholder{
+//         color: #9e9e9e;
+//     }
+//     &:focus {
+//         box-shadow: none !important;
+//         border: none !important;
+//     }
+// }
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.form-control.me-2 {
+    background-color: #212121;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: none;
+    border-radius: 4px 0px 0px 4px;
+    font-size: 14px;
+    padding: 11px 28px 11.2px 14px;
+    margin-right: 0 !important;
+    letter-spacing: 0.5px;
+    color: white !important;
+    transition: all 0.3s ease;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.search-placeholder {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    color: #9e9e9e;
+    font-size: 14px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.form-control.me-2:focus {
+    box-shadow: none;
+    border-color: nth($color-primary , 1 );
+    background-color: #212121;
+}
+
+.form-control.me-2:focus + .search-placeholder {
+    top: 0;
+    left: 14px;
+    font-size: 12px;
+    color: nth($color-primary , 1 );
+    z-index: 2;
+    background-color: #212121;
+    padding: 0 10px;
+}
+
+.form-control.me-2:not(:placeholder-shown) + .search-placeholder {
+    top: 0;
+    left: 14px;
+    font-size: 12px;
+    color: nth($color-primary , 1 );
+    background-color: #212121;
+    padding: 0 10px;
+}
+
+// FORM CONTROL
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+// FIN FORM CONTROL
+
+#btn-buscar {
+    background-color: nth($color-primary, 1);
+    border-radius: 0px 20px 20px 0px;
+    font-size: 14px;
+    padding: 0px 14px;
+    border-color: nth($color-primary, 1);
+}
+
+.parrafo-menu {
+    background-color: grey;
+    text-align: center;
+    margin: 0;
+}
+
+.destacados {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+
+    img {
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+        max-height: 100px;
+    }
+}
+
+// ----------------------------------- BOTÓN INICIAR SESIÓN
+
+.iniciar-sesion {
+    margin-top: 0;
+
+    .btn-login {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 10px 20px;
+        background-color: nth($color-primary , 1 );
+        color: #fff;
+        text-decoration: none;
+        border-radius: 25px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-size: 1rem;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+
+        img {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease-in-out;
+            &:hover {
+                color: black;
+            }
+        }
+
+        &:hover {
+            background-color: white;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+
+            img {
+                transform: rotate(15deg);
+            }
+        }
+
+        span {
+            transition: color 0.3s ease-in-out;
+        }
+
+        &:hover span {
+            color: black;
+        }
+    }
+}
+
+
+// ----------------------------------- FIN BOTÓN INICIAR SESIÓN
+
+// ----------------------------------- SLIDER CLIENTES
+
+.titulos {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    font-weight: 300;
+    padding: 20px;
+}
+
+.slider {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slider-track {
+    display: flex;
+    animation: scroll 30s linear infinite;
+    -webkit-animation: scroll 30s linear infinite;
+    width: calc(200px * 12);
+}
+
+.slider .slide { 
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0px 10px;
+    margin: 20px 0;
+}
+
+.slider .slide img {
+    width: 100%;
+    object-fit:contain;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-200px * 6));
+        transform: translateX(calc(-200px * 6));
+    }
+}
+
+// ----------------------------------- FIN SLIDER CLIENTES
+
+// --------------------------------------- CATEGORIAS BODY
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: #eeeeee;
+    padding: 50px;
+    box-shadow: 0px 0px 166px -89px rgba(33,33,33,0.34);
+    border-radius: 2px;
+    .item {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        .img-fluid {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+
+            p {
+                font-size: 1.2rem;
+                margin: 0;
+            }
+
+            a {
+                margin-top: 10px;
+                padding: 8px 15px;
+                background: nth($color-primary , 1);
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background 0.3s ease;
+
+                &:hover {
+                    background: black;
+                }
+            }
+        }
+
+        &:hover .overlay {
+            opacity: 1;
+        }
+    }
+}
+
+
+// ----------------------------------- FIN CATEGORIAS BODY
+
+// --------------------------------------- SLIDER RESEÑAS
+
+.review-slider {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+
+    img {
+        margin-left: 1rem;
+        object-fit: cover;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .review-slides-container {
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .review-slides {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .review-slide {
+        flex: 0 0 100%;
+        padding: 1.5rem;
+        text-align: left;
+
+        h3 {
+            display: flex;
+            font-size: 1.2rem;
+            justify-content: center;
+        }
+
+        .review-rating {
+            font-size: 1.2rem;
+            color: gold;
+            // margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        p {
+            display: flex;
+            font-size: 1rem;
+            justify-content: center;
+        }
+    }
+
+    .review-prev,
+    .review-next {
+        position: absolute;
+        top: 80%;
+        transform: translateY(-50%);
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+        font-size: 1.2rem;
+        font-weight: bold;
+
+        &:hover {
+            background-color: #f0f0f0;
+        }
+    }
+
+    .review-prev {
+        left: 10px;
+    }
+
+    .review-next {
+        right: 10px;
+    }
+}
+
+// BOTON
+
+.btn-opinion {
+    display: flex;
+    justify-content: center;
+
+    button {
+        margin: 20px 0;
+        padding: 10px;
+        color: white;
+        background-color: nth($color-primary, 1);
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        &:hover {
+            background-color: #212121;
+        }
+    }
+
+    button p {
+        margin-bottom: 0;
+    }
+}
+
+// FIN BOTON
+
+
+// ------------------------------------FIN SLIDER RESEÑAS
+
+// --------------------------------------- ELECTROPUNTOS
+
+.electropuntos-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.electropuntos-banner a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.electropuntos-banner img {
+    max-width: 78%;
+    height: auto;
+    opacity: 1;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.electropuntos-banner img:hover {
+    transform: scale(1.1);
+    transform-origin: center;
+}
+
+
+
+// ------------------------------------FIN ELECTROPUNTOS
+
+// ------------------------------------ASESORES WHATSAPP
+.container {
+    background-color: #e9e9e9;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px 0 0 4px;
+    padding: 2rem;
+    .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .team-card {
+            background-color: #ffffff;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            text-align: center;
+            width: 150px;
+            height: 220px;
+            display: flex;
+            flex-direction: column;
+            min-height: 220px;
+            justify-content: space-between;
+            .name {
+                font-weight: bold;
+                font-size: 1rem;
+                margin: 0.5rem 0;
+            }
+
+            .btn-chat {
+                background-color: #28a745;
+                color: #fff;
+                border: none;
+                padding: 8px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 0.9rem;
+                display: inline-flex;
+                font-weight: bold;
+                text-transform: uppercase;
+                align-items: center;
+                gap: 8px;
+                transition: background-color 0.3s;
+            }
+
+            .btn-chat img {
+                width: 16px;
+                height: 16px;
+            }
+
+            .btn-chat:hover {
+                background-color: #218838;
+            }
+
+
+            .logo-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100px;
+            }
+        }
+    }
+}
+
+// --------------------------------FIN ASESORES WHATSAPP
+
+// --------------------------------------- FOOTER
+
+footer {
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        background-color: #121212;
+        color: #E0E0E0;
+        padding: 20px;
+        width: 100%;
+        gap: 20px;
+
+        .content-footer {
+            flex: 1 1 200px;
+            max-width: 300px;
+            padding: 10px;
+
+            h3 {
+                margin-bottom: 10px;
+                color: white;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                border-bottom: 2px solid nth($color-primary , 1);
+                padding-bottom: 5px;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+
+                &:hover {
+                    text-decoration: none;
+                    color: nth($color-primary , 1);
+                }
+            }
+
+            p {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin: 5px 0;
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+
+            .img-footer {
+                text-align: center;
+
+                img {
+                    width: 140px;
+                    height: 80px;
+                    margin: 10px auto;
+                }
+            }
+
+            .social-media {
+                display: flex;
+                gap: 15px;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                a {
+                    display: inline-block;
+                    transition: transform 0.2s ease;
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// --------------------------------------- FIN FOOTER
