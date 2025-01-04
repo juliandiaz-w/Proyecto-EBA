@@ -1,4 +1,3 @@
-/* General adjustments for mobile responsiveness */
 @media (max-width: 768px) {
     .electropuntos-nav {
         flex-wrap: wrap;
@@ -116,5 +115,15 @@
             text-align: center;
             font-size: 10px;
         }
+    }
+}
+
+
+@media (max-width: 564px) {
+    .barra-busqueda {
+        display: none;
+    }
+    .iniciar-sesion a span {
+        display: none;
     }
 }

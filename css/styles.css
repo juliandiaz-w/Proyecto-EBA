@@ -53,11 +53,41 @@ body .navbar {
 
 .navbar-eba {
   background-color: #212121;
+  padding: 0.5rem 1rem;
 }
 
 .input-container {
   position: relative;
   width: 100%;
+}
+
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(255,255,255,1)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.barra-busqueda {
+  display: flex;
+}
+.barra-busqueda input {
+  background-color: #212121;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+}
+.barra-busqueda button {
+  background-color: #FF00D1;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  padding: 10px 14px;
+}
+.barra-busqueda button img {
+  width: 16px;
+  height: 16px;
 }
 
 .form-control.me-2 {
@@ -66,7 +96,7 @@ body .navbar {
   border-bottom: 1px solid white;
   border-left: 1px solid white;
   border-right: none;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   font-size: 14px;
   padding: 11px 28px 11.2px 14px;
   margin-right: 0 !important;
@@ -95,21 +125,13 @@ body .navbar {
   background-color: #212121;
 }
 
-.form-control.me-2:focus + .search-placeholder {
-  top: 0;
-  left: 14px;
-  font-size: 12px;
-  color: #f7280e;
-  z-index: 2;
-  background-color: #212121;
-  padding: 0 10px;
-}
-
+.form-control.me-2:focus + .search-placeholder,
 .form-control.me-2:not(:placeholder-shown) + .search-placeholder {
   top: 0;
   left: 14px;
   font-size: 12px;
   color: #f7280e;
+  z-index: 2;
   background-color: #212121;
   padding: 0 10px;
 }
@@ -120,9 +142,9 @@ input[type=search]::-webkit-search-cancel-button {
 
 #btn-buscar {
   background-color: #f7280e;
-  border-radius: 0px 20px 20px 0px;
+  border-radius: 0 20px 20px 0;
   font-size: 14px;
-  padding: 0px 14px;
+  padding: 0 14px;
   border-color: #f7280e;
 }
 
@@ -147,6 +169,16 @@ input[type=search]::-webkit-search-cancel-button {
 .iniciar-sesion {
   margin-top: 0;
 }
+.iniciar-sesion a {
+  display: inline-flex;
+  align-items: center;
+  background-color: #FF00D1;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
 .iniciar-sesion .btn-login {
   display: inline-flex;
   align-items: center;
@@ -165,10 +197,10 @@ input[type=search]::-webkit-search-cancel-button {
 .iniciar-sesion .btn-login img {
   width: 20px;
   height: 20px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease;
 }
 .iniciar-sesion .btn-login img:hover {
-  color: black;
+  transform: rotate(15deg);
 }
 .iniciar-sesion .btn-login:hover {
   background-color: white;
@@ -176,9 +208,6 @@ input[type=search]::-webkit-search-cancel-button {
 }
 .iniciar-sesion .btn-login:hover img {
   transform: rotate(15deg);
-}
-.iniciar-sesion .btn-login span {
-  transition: color 0.3s ease-in-out;
 }
 .iniciar-sesion .btn-login:hover span {
   color: black;
@@ -398,7 +427,7 @@ input[type=search]::-webkit-search-cancel-button {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 500px;
+  height: auto;
   overflow: hidden;
   background-color: #fff;
 }
@@ -553,7 +582,6 @@ footer .footer .content-footer .social-media a:hover {
   transform: scale(1.1);
 }
 
-/* General adjustments for mobile responsiveness */
 @media (max-width: 768px) {
   .electropuntos-nav {
     flex-wrap: wrap;
@@ -643,5 +671,13 @@ footer .footer .content-footer .social-media a:hover {
   .navbar .iniciar-sesion a {
     text-align: center;
     font-size: 10px;
+  }
+}
+@media (max-width: 564px) {
+  .barra-busqueda {
+    display: none;
+  }
+  .iniciar-sesion a span {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
