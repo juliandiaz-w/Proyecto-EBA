@@ -5,7 +5,7 @@
 
 // -----------------------------------FUENTE
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 // ------------------------------ FIN FUENTE
 
@@ -22,7 +22,7 @@
     align-items: center;
     background-color: nth($color-primary, 1);
     border-radius: 0 0 6px 6px;
-    color: #fff;
+    color: #212121;
     padding: 5px 15px;
     width: 100%;
     text-align: left;
@@ -52,6 +52,9 @@
 
 // ----------------------------------- FIN ELECTROPUNTOS E INFO
 body {
+    header{
+        background-color: #212121;
+    }
     .banner {
         position: relative;
 

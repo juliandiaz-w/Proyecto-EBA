@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --font-size: 1.3rem;
   --border-radius: 3px;
@@ -15,7 +16,7 @@
   align-items: center;
   background-color: #f7280e;
   border-radius: 0 0 6px 6px;
-  color: #fff;
+  color: #212121;
   padding: 5px 15px;
   width: 100%;
   text-align: left;
@@ -38,6 +39,9 @@
   color: #fff;
 }
 
+body header {
+  background-color: #212121;
+}
 body .banner {
   position: relative;
 }
@@ -215,7 +219,7 @@ input[type=search]::-webkit-search-cancel-button {
 
 .titulos {
   text-align: center;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 300;
   padding: 20px;
@@ -435,7 +439,7 @@ input[type=search]::-webkit-search-cancel-button {
 .electropuntos-banner a {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .electropuntos-banner img {
